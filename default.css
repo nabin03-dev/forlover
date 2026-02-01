@@ -1,0 +1,114 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffe;
+    font-size: 14px;
+    font-family: '微软雅黑','宋体',sans-serif;
+    color: #231F20;
+    overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* Links */
+a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Main container */
+#main {
+    width: 100%;
+    text-align: center;
+}
+
+/* Wrap container for tree and text */
+#wrap {
+    position: relative;
+    max-width: 1100px;
+    width: 95%;
+    height: 680px; /* Keep tree canvas size consistent */
+    margin: 10px auto 0 auto;
+}
+
+/* Text box */
+#text {
+    width: 25%;
+    min-width: 220px;
+    height: 560px;
+    position: absolute;
+    left: 15%;
+    top: 80px;
+}
+
+/* Code / typewriter text */
+#code {
+    display: none;
+    font-size: 16px;
+}
+
+/* Clock container */
+#clock-box {
+    position: absolute;
+    left: 5%;
+    bottom: 50px;
+    font-size: 28px;
+    display: none;
+}
+
+#clock-box a {
+    font-size: 28px;
+    text-decoration: none;
+}
+
+/* Clock digits */
+#clock {
+    margin-left: 0;
+}
+#clock .digit {
+    font-size: 64px;
+}
+
+/* Canvas for tree */
+#canvas {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 680px; /* fixed height for tree math */
+}
+
+/* Error message */
+#error {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    display: none;
+}
+
+/* Hand cursor when hovering on seed */
+.hand {
+    cursor: pointer;
+}
+
+/* Text styling */
+.say {
+    margin-left: 5px;
+}
+.space {
+    margin-right: 150px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    #text {
+        width: 40%;
+        left: 5%;
+    }
+    #clock-box {
+        font-size: 22px;
+        bottom: 20px;
+    }
+    #clock .digit {
+        font-size: 48px;
+    }
+}
