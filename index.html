@@ -24,7 +24,7 @@
             <div id="wrap">
                 <div id="text">
                     <div id="code"> <font color="#FF0000"> 
-                        <span class="say">Hey you… yes YOU 😏</span><br>
+            <span class="say">Hey you… yes YOU 😏</span><br>
             <span class="say">I was trying to be serious today</span><br>
             <span class="say">But then I thought of your smile</span><br>
             <span class="say">And yeah… plan failed immediately 😌</span><br>
@@ -111,15 +111,19 @@
         var hold = 1;
 
         canvas.click(function(e) {
-            var offset = canvas.offset(), x, y;
-            x = e.pageX - offset.left;
-            y = e.pageY - offset.top;
-            if (seed.hover(x, y)) {
-                hold = 0; 
-                canvas.unbind("click");
-                canvas.unbind("mousemove");
-                canvas.removeClass('hand');
-            }
+    // --- ADD THIS LINE ---
+    document.getElementById('bg-music').play(); 
+    // ---------------------
+
+    var offset = canvas.offset(), x, y;
+    x = e.pageX - offset.left;
+    y = e.pageY - offset.top;
+    if (seed.hover(x, y)) {
+        hold = 0; 
+        canvas.unbind("click");
+        canvas.unbind("mousemove");
+        canvas.removeClass('hand');
+    }
         }).mousemove(function(e){
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;

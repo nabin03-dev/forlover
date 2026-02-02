@@ -82,22 +82,5 @@ function timeElapse(date) {
     $("#clock").html(result);
 }
 
-// Wait for the user to interact with the page
-document.addEventListener('DOMContentLoaded', function() {
-    var music = document.getElementById('bg-music');
-    var started = false;
 
-    function playMusic() {
-        if (!started) {
-            music.play().catch(function(err){
-                console.log("Audio play failed:", err);
-            });
-            started = true;
-        }
-    }
-
-    // Play on first click or touch anywhere
-    document.body.addEventListener('click', playMusic, { once: true });
-    document.body.addEventListener('touchstart', playMusic, { once: true });
-});
 
