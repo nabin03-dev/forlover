@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     background: #ffe;
-    font-family: '微软雅黑','宋体',sans-serif;
+    font-family: 'Dancing Script', 'Pacifico', 'Cursive', 'Segoe Script', 'Brush Script MT', sans-serif;
     color: #231F20;
     overflow-x: hidden;
 }
@@ -69,8 +69,8 @@ a {
 /* Typewriter text */
 #code {
     display: none;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.4;
 }
 
 /* =========================
@@ -79,8 +79,8 @@ a {
 #clock-box {
     position: absolute;
     left: 5%;
-    bottom: 40px;
-    font-size: 28px;
+    bottom: 25px;
+    font-size: 22px;
     display: none;
 }
 
